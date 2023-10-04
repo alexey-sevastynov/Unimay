@@ -77,7 +77,7 @@ export const ItemCommment: React.FC<ItemCommmentProps> = ({
         ))}
 
       {showReplies && comment.replies && comment.replies.length > 0 && (
-        <div className="replies" style={{ paddingLeft: '40px' }}>
+        <div className="replies">
           {comment.replies.map((reply) => (
             <ItemCommment key={reply.id} comment={reply} />
           ))}

@@ -1,5 +1,7 @@
 .item-comment {
   position: relative;
+  margin-top: 42px;
+  margin-bottom: 45px;
 
   &__avatar {
     background-color: $black;
@@ -87,7 +89,14 @@
       }
     }
   }
-
+  .replies {
+    padding-left: 20px;
+  }
+  @media (max-width: $tablet) {
+    .replies {
+      padding-left: 10px;
+    }
+  }
   @media (max-width: $mobile) {
     &__avatar {
       width: 80px;
@@ -115,6 +124,10 @@
       &-answer {
         justify-content: space-between;
       }
+    }
+
+    .replies {
+      padding-left: 0px;
     }
   }
 }
